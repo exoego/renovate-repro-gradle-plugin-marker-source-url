@@ -1,0 +1,11 @@
+# Gradle plugin update has no source link
+
+## Current behavior
+
+Renovate PRs that update the `com.diffplug.spotless` Gradle plugin have no link to the source repository.
+The plugin marker POM (`com.diffplug.spotless:com.diffplug.spotless.gradle.plugin`) on the Gradle Plugin Portal has no `scm` or `url`.
+The plugin artifact POM (`com.diffplug.spotless:spotless-plugin-gradle`) has `scm`, but Renovate does not read it.
+
+## Expected behavior
+
+Renovate PRs link to the [source repository](https://github.com/diffplug/spotless).
